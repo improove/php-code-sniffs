@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="Improove Zend Standard">
+    <description>A coding standard for Improove. Based on PEAR and Zend coding standards. Mainly used for Magento and Ztorm.</description>
+
+    <!-- PEAR -->
+    <rule ref="PEAR">
+        <!-- We want our own sniffs to be run instead of the following: -->
+        <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
+    </rule>
+
+    <!-- Generic code analysis -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+    <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
+    <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+    <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+
+    <rule ref="Generic.Commenting.Todo"/>
+
+    <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+</ruleset>

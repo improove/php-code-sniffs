@@ -487,5 +487,3 @@ class ImprooveZend_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSni
 
 
 }//end class
-
-?>

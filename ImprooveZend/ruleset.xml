@@ -6,6 +6,7 @@
     <rule ref="PEAR">
         <!-- We want our own sniffs to be run instead of the following: -->
         <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
+        <exclude name="PEAR.NamingConventions.ValidVariableName"/>
     </rule>
 
     <!-- Generic code analysis -->

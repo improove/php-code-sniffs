@@ -55,6 +55,10 @@ class ImprooveZend_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_C
             return;
         }
 
+		if (!isset($methodProps)) {
+			$methodProps = array('scope' => null);
+		}
+
         $memberName     = ltrim($tokens[$stackPtr]['content'], '$');
         $isPublic       = ($methodProps['scope'] === 'private' || 'protected') ? false : true;
         $scope          = $memberProps['scope'];
